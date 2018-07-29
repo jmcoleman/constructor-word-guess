@@ -26,16 +26,6 @@ var Word = function() {
         }
     };
 
-    this.showWord = function () {
-        var gameWord = '';
-
-        for (i=0;i < this.letters.length; i++) {
-            // console.log("GameWord letter loop: " + gameWord);
-            gameWord = gameWord + " " + this.letters[i].toString();
-        }
-        return gameWord;
-    };
-
     this.makeGuess = function(character) {
         var found = false;
 
@@ -61,6 +51,17 @@ var Word = function() {
 
         return true;
     }
+};
+
+// add toString method to the word object
+Word.prototype.toString = function() {
+    var gameWord = '';
+
+    for (i=0;i < this.letters.length; i++) {
+        gameWord = gameWord + " " + this.letters[i];
+    }
+    gameWord = gameWord + "\n";
+    return gameWord;
 };
 
 module.exports = Word;

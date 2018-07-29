@@ -20,8 +20,9 @@ var playGame = function() {
     //////////////////////////
     function displayWord (g) {
         // console.log(g.letters);
-        var theWord = g.showWord();
-        console.log(theWord + "\n");
+
+        //using prototype with toString()
+        console.log(g + '');
     }
 
     // get the random word
