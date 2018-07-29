@@ -10,6 +10,9 @@ var WordCategories = [
             "George Clooney","Amal Clooney", "Serena Williams","David Beckham","Oprah Winfrey","Sir Elton John"] }
  ];
 
+ /////////////////////////////////////
+ // Word Constructor
+ /////////////////////////////////////
 var Word = function() {
     this.letters = [];
     this.guessWord = '';
@@ -53,7 +56,11 @@ var Word = function() {
     }
 };
 
-// add toString method to the word object
+//////////////////////////////////////////////
+// add toString method to the Word object
+//////////////////////////////////////////////
+
+// toString method
 Word.prototype.toString = function() {
     var gameWord = '';
 
@@ -64,5 +71,8 @@ Word.prototype.toString = function() {
     return gameWord;
 };
 
+/////////////////////////////////////
+// export the word object for use
+/////////////////////////////////////
 module.exports = Word;
 

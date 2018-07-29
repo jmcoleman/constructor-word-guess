@@ -7,7 +7,7 @@ const GREEN_CONSOLE_COLOR = "\x1b[32m";
 const RED_CONSOLE_COLOR = "\x1b[31m";
 
 ////////////////////////////////
-// play game constructor
+// play game
 ////////////////////////////////
 var playGame = function() {
 
